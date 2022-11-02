@@ -10,3 +10,4 @@ Envoyez-nous votre réponse à [cto@mon-territoire.fr](mailto:cto@mon-territoire
 
 note:
 part 1 environ 1 hour: perte de temps sur le street form au lieu de from
+part 2: 23:18
