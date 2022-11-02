@@ -9,4 +9,4 @@ Une seule règle : **on ne touche pas au dossier `spec`**, sinon c'est de la tri
 Envoyez-nous votre réponse à [cto@mon-territoire.fr](mailto:cto@mon-territoire.fr) et nous vous recontacterons très vite.  
 
 note:
-part 1: 1 hour
+part 1 environ 1 hour: perte de temps sur le street form au lieu de from
