@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_02_200115) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_02_201851) do
   create_table "communes", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -34,6 +34,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_02_200115) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "commune_id", null: false
+    t.string "title"
+    t.integer "from"
+    t.integer "to"
     t.index ["commune_id"], name: "index_streets_on_commune_id"
   end
 
