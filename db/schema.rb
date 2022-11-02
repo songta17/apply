@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_02_195253) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_02_200115) do
   create_table "communes", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -25,6 +25,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_02_195253) do
   create_table "intercommunalities", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "form"
+    t.string "siren"
   end
 
   create_table "streets", force: :cascade do |t|
