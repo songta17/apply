@@ -9,6 +9,8 @@ class Intercommunality < ApplicationRecord
 
   before_save :set_slug
 
+  require 'csv'
+
   def communes_hash
     communes_hash = {}
     communes.each do |commune|
@@ -20,10 +22,15 @@ class Intercommunality < ApplicationRecord
   def set_slug
     self.slug = name.parameterize if !name.nil? && self.slug.nil?
   end
-  
 
-  # Failure/Error: Commune.create!(code_insee: "34172", intercommunality: interco, name: "Montpellier")
-     
-  # ActiveRecord::NotNullViolation:
-  #   SQLite3::ConstraintException: NOT NULL constraint failed: communes.street_id
+  # NoMethodError:
+  #   undefined method `population' for #<Intercommunality id: 2, created_at: 
+  #   "2022-11-07 22:59:54.483742000 +0000", updated_at: "2022-11-07 22:59:54.483742000 
+  #   +0000", name: "Montpellier Méditerranée Métropole", form: "met", siren: "243400017", slug: "montpellier-mediterranee-metropole">
+  
+  # def population
+  #   binding.pry
+  #   # Intercommunality Communes "population"
+  #   # sum
+  # end
 end
