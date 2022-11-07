@@ -4,7 +4,6 @@ class ImportJob < ApplicationJob
   queue_as :default
 
   def perform(csv)
-    # Intercommunality.count
     CSV.foreach('./spec/fixtures/epcicom.csv', :headers => true, col_sep: ';', encoding: 'ISO-8859-1:UTF-8') do |row|
       if row['form_epci'] == "METRO"
         form_epci = 'met'
