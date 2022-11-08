@@ -12,16 +12,6 @@ note:
 part 1: environ 1 hour: perte de temps sur le street form au lieu de from
 part 2: 23:18
 part 4: 0:00 - 0:20 / stop
-part 4: 22:41 - 
+part 4: 22:41 - 0:29
+part 3: Regex
 
-TOdo
-CommunesController
-  #create
-    is forbidden (FAILED - 14)
-  #show
-    requires :code_insee to identify resource (FAILED - 15)
-    responds with success (FAILED - 16)
-  #update
-    requires :code_insee to identify resource (FAILED - 17)
-    requires attributes to update (FAILED - 18)
-    updates the resource and responds with empty response (FAILED - 19)
